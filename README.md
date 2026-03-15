@@ -52,6 +52,23 @@ response
   "expires_at": "2026-03-15T20:36:09.908000Z"
 }
 
+PUT /links/{short_code}
+request 
+{
+  "original_url": "https://example.com/"
+}
+
+response
+{
+  "original_url": "https://example.com/",
+  "expires_at": "2026-03-15T20:48:32.312Z",
+  "id": 0,
+  "short_code": "string",
+  "created_at": "2026-03-15T20:48:32.312Z",
+  "clicks": 0,
+  "last_used_at": "2026-03-15T20:48:32.312Z",
+  "user_id": 0
+}
 
 Инструкция по запуску:
 локально - запустить в терминале docker compose up и перейти по http://localhost:8000/docs

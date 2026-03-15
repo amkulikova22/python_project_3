@@ -71,5 +71,16 @@ response
 }
 
 Инструкция по запуску:
-локально - запустить в терминале docker compose up и перейти по http://localhost:8000/docs
+локально:
+- склонировать репозиторий
+- создать файл .env
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=123456
+POSTGRES_DB=postgres
+SECRET_KEY
+UNUSED_LINK_DAYS=30
+BASE_URL=http://localhost:8000
+- запустить в терминале docker compose up
+- перейти по ссылке http://localhost:8000/docs
+
 через render - по ссылке https://python-project-3-saa3.onrender.com

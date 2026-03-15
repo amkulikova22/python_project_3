@@ -43,7 +43,7 @@ services:
       DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
       REDIS_URL: redis://redis:6379/0
       SECRET_KEY: ${SECRET_KEY}
-      BASE_URL: http://localhost:8000
+      BASE_URL: https://python-project-3-saa3.onrender.com
       UNUSED_LINK_DAYS: ${UNUSED_LINK_DAYS:-30}
     ports:
       - "8000:8000"

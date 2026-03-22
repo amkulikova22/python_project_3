@@ -98,3 +98,4 @@ BASE_URL=http://localhost:8000
 Файл с отчетом содержится в папке htmlcov
 
 ![alt text](image.png)
+![alt text](image-1.png)

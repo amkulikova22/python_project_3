@@ -93,6 +93,14 @@ def delete_link(
     link_service.delete_link(db, link)
     return None
 
+@router.get("/my-links", response_model=List[LinkResponse])
+def get_my_links(
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_active_user)
+):
+    links = link_service.get_links_by_user(db, current_user.id)
+    return links
+
 @router.get("/{short_code}")
 def redirect_to_original(
     short_code: str,

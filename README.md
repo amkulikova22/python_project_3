@@ -84,3 +84,17 @@ BASE_URL=http://localhost:8000
 - перейти по ссылке http://localhost:8000/docs
 
 через render - по ссылке https://python-project-3-saa3.onrender.com
+
+
+
+## Запуск тестов
+
+1) Установить зависимости
+2) docker-compose up -d postgres
+3) alembic upgrade head
+4) pytest tests/ -v --cov=app --cov-report=term-missing --cov-report=html
+5) Открыть в браузере htmlcov/index.html
+
+Файл с отчетом содержится в папке htmlcov
+
+![alt text](image.png)
